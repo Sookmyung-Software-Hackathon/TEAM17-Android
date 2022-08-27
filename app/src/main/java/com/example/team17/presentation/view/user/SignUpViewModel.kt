@@ -1,9 +1,9 @@
 package com.example.team17.presentation.view.user
 
 import androidx.lifecycle.ViewModel
-import com.example.team17.domain.repository.SignUpRepository
+import com.example.team17.domain.repository.UserRepository
 
-class SignUpViewModel(signUpRepository: SignUpRepository): ViewModel() {
+class SignUpViewModel(signUpRepository: UserRepository): ViewModel() {
 
 
 }

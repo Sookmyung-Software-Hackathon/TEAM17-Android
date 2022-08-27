@@ -1,9 +1,11 @@
 package com.example.team17.presentation.view.add
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.team17.MainActivity
 import com.example.team17.databinding.FragmentAddBottomSheetBinding
 import com.example.team17.presentation.view.home.adapter.MyBoggleListAdapter
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
@@ -25,5 +27,14 @@ class AddBottomSheetFragment : BottomSheetDialogFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.clAddBoggle.setOnClickListener {
+            val intent = Intent(activity, AddBoggleActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.clAddVote.setOnClickListener {
+            val intent = Intent(activity, AddVoteActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

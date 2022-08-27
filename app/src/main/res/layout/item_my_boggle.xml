@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
+        <variable
+            name="data"
+            type="com.example.team17.domain.model.home.MyBoggleInfo" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -28,6 +30,7 @@
                 android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
+                android:text="@{data.date}"
                 tools:text="2022년 08월 27일 13시" />
 
             <TextView
@@ -50,6 +53,7 @@
                 android:layout_marginTop="10dp"
                 android:textColor="@color/black"
                 android:textSize="20sp"
+                android:text="@{data.title}"
                 app:layout_constraintStart_toStartOf="@+id/tv_date"
                 app:layout_constraintTop_toBottomOf="@id/tv_date"
                 tools:text="부대찌개 점심팟" />
@@ -61,6 +65,7 @@
                 android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="@id/tv_title"
                 app:layout_constraintStart_toEndOf="@id/tv_title"
+                android:text="@{data.currentPerson + `/` + data.totalPerson}"
                 tools:text="(5/6)" />
 
             <androidx.recyclerview.widget.RecyclerView
