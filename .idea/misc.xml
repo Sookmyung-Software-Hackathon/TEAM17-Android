@@ -16,8 +16,12 @@
         <entry key="app/src/main/res/drawable/ic_clipboard_yellow.xml" value="0.1375" />
         <entry key="app/src/main/res/drawable/ic_home_black.xml" value="0.1575" />
         <entry key="app/src/main/res/drawable/ic_home_yellow.xml" value="0.1375" />
+        <entry key="app/src/main/res/drawable/rectangle_fill_yellow_radius_50.xml" value="0.177" />
         <entry key="app/src/main/res/drawable/shape_rect_main_yellow_cursor.xml" value="0.126" />
+        <entry key="app/src/main/res/font/font_lato.xml" value="0.25092592592592594" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3302083333333333" />
+        <entry key="app/src/main/res/layout/activity_sign_up_nickname.xml" value="0.27899423307440085" />
+        <entry key="app/src/main/res/layout/activity_sign_up_select_team.xml" value="0.3157894736842105" />
         <entry key="app/src/main/res/layout/fragment_add.xml" value="0.16742654508611957" />
         <entry key="app/src/main/res/layout/fragment_award.xml" value="0.30978260869565216" />
         <entry key="app/src/main/res/layout/fragment_clipboard.xml" value="0.30978260869565216" />
