@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/selector_menu_home"
+        android:title="홈" />
+
+    <item
+        android:id="@+id/clipboardFragment"
+        android:icon="@drawable/selector_menu_clipboard"
+        android:title="목록" />
+
+    <item
+        android:id="@+id/awardFragment"
+        android:icon="@drawable/selector_menu_award"
+        android:title="순위" />
+
+    <item
+        android:id="@+id/addFragment"
+        android:icon="@drawable/selector_menu_add"
+        android:title="추가" />
+
+</menu>
