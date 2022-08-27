@@ -11,7 +11,9 @@ import com.example.team17.databinding.ItemMyBoggleBinding
 import com.example.team17.domain.model.home.MyBoggleInfo
 import com.example.team17.presentation.view.home.adapter.MyBoggleListAdapter.*
 
-class MyBoggleListAdapter : ListAdapter<MyBoggleInfo, MyBoggleListViewHolder>(
+class MyBoggleListAdapter(
+    private val data: List<MyBoggleInfo>
+) : ListAdapter<MyBoggleInfo, MyBoggleListViewHolder>(
     diffUtil
 ) {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyBoggleListViewHolder {
@@ -23,13 +25,14 @@ class MyBoggleListAdapter : ListAdapter<MyBoggleInfo, MyBoggleListViewHolder>(
     }
 
     override fun onBindViewHolder(holder: MyBoggleListViewHolder, position: Int) {
-        holder.onBind()
+        holder.onBind(data[position])
     }
 
     class MyBoggleListViewHolder(
         val binding: ItemMyBoggleBinding
     ) : RecyclerView.ViewHolder(binding.root) {
-        fun onBind() {
+        fun onBind(data: MyBoggleInfo) {
+            binding.data = data
         }
     }
 

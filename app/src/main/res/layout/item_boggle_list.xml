@@ -5,6 +5,9 @@
 
     <data>
 
+        <variable
+            name="data"
+            type="com.example.team17.domain.model.home.MyBoggleInfo" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -24,18 +27,20 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="21dp"
                 android:layout_marginTop="17dp"
+                android:text="@{data.date}"
                 android:textColor="@color/black"
                 android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="2022년 08월 27일 13시" />
-ㄱ
+
 
             <TextView
                 android:id="@+id/tv_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:text="@{data.title}"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="@+id/tv_date"
@@ -46,6 +51,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
+                android:text="@{`(`+data.currentPerson + `/` + data.totalPerson +`)`}"
                 android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="@id/tv_title"
                 app:layout_constraintStart_toEndOf="@id/tv_title"

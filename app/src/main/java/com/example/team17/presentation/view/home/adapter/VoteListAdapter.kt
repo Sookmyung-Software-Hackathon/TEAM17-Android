@@ -8,8 +8,11 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.team17.R
 import com.example.team17.databinding.ItemHomeVoteBinding
+import com.example.team17.domain.model.home.VoteBoggleInfo
 
-class VoteListAdapter : ListAdapter<String, VoteListAdapter.VoteListViewHolder>(
+class VoteListAdapter(
+    private val data: List<VoteBoggleInfo>
+) : ListAdapter<VoteBoggleInfo, VoteListAdapter.VoteListViewHolder>(
     diffUtil
 ) {
 
@@ -22,23 +25,23 @@ class VoteListAdapter : ListAdapter<String, VoteListAdapter.VoteListViewHolder>(
     }
 
     override fun onBindViewHolder(holder: VoteListViewHolder, position: Int) {
-        holder.onBind()
+        holder.onBind(data[position])
     }
 
     class VoteListViewHolder(
         val binding: ItemHomeVoteBinding
     ) : RecyclerView.ViewHolder(binding.root) {
-        fun onBind() {
-
+        fun onBind(data: VoteBoggleInfo) {
+            binding.data = data
         }
     }
 
     companion object {
-        val diffUtil = object : DiffUtil.ItemCallback<String>() {
-            override fun areContentsTheSame(oldItem: String, newItem: String) =
+        val diffUtil = object : DiffUtil.ItemCallback<VoteBoggleInfo>() {
+            override fun areContentsTheSame(oldItem: VoteBoggleInfo, newItem: VoteBoggleInfo) =
                 oldItem == newItem
 
-            override fun areItemsTheSame(oldItem: String, newItem: String) =
+            override fun areItemsTheSame(oldItem: VoteBoggleInfo, newItem: VoteBoggleInfo) =
                 oldItem == newItem
         }
     }

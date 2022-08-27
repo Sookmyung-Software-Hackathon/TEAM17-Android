@@ -8,8 +8,11 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.team17.R
 import com.example.team17.databinding.ItemBoggleListBinding
+import com.example.team17.domain.model.home.MyBoggleInfo
 
-class BoggleListAdapter : ListAdapter<String, BoggleListAdapter.BoggleListViewHolder>(
+class BoggleListAdapter(
+    private val data: List<MyBoggleInfo>
+) : ListAdapter<MyBoggleInfo, BoggleListAdapter.BoggleListViewHolder>(
     diffUtil
 ) {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BoggleListViewHolder {
@@ -21,23 +24,23 @@ class BoggleListAdapter : ListAdapter<String, BoggleListAdapter.BoggleListViewHo
     }
 
     override fun onBindViewHolder(holder: BoggleListViewHolder, position: Int) {
-        holder.onBind()
+        holder.onBind(data[position])
     }
 
     class BoggleListViewHolder(
         val binding: ItemBoggleListBinding
     ) : RecyclerView.ViewHolder(binding.root) {
-        fun onBind() {
-
+        fun onBind(data: MyBoggleInfo) {
+            binding.data = data
         }
     }
 
     companion object {
-        val diffUtil = object : DiffUtil.ItemCallback<String>() {
-            override fun areContentsTheSame(oldItem: String, newItem: String) =
+        val diffUtil = object : DiffUtil.ItemCallback<MyBoggleInfo>() {
+            override fun areContentsTheSame(oldItem: MyBoggleInfo, newItem: MyBoggleInfo) =
                 oldItem == newItem
 
-            override fun areItemsTheSame(oldItem: String, newItem: String) =
+            override fun areItemsTheSame(oldItem: MyBoggleInfo, newItem: MyBoggleInfo) =
                 oldItem == newItem
         }
     }

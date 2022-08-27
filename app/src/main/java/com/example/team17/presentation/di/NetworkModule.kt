@@ -1,5 +1,6 @@
 package com.example.team17.presentation.di
 
+import com.example.team17.data.api.HomeService
 import com.example.team17.data.api.LoginService
 import com.example.team17.data.sharedpref.BoggleSharedPreference
 import com.google.gson.GsonBuilder
@@ -10,7 +11,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 val netWorkModule = module {
-    single{
+    single {
         OkHttpClient.Builder()
             .addInterceptor(Interceptor { chain ->
                 chain.proceed(
@@ -25,15 +26,23 @@ val netWorkModule = module {
             .build()
     }
 
-    single<Retrofit>{
+    single<Retrofit> {
         Retrofit.Builder()
             .client(get())
-            .addConverterFactory(GsonConverterFactory.create(GsonBuilder().setLenient().create())) //GsonBuilder().setLenient().create()
+            .addConverterFactory(
+                GsonConverterFactory.create(
+                    GsonBuilder().setLenient().create()
+                )
+            ) //GsonBuilder().setLenient().create()
             .baseUrl("54.180.86.203:8080/")
             .build()
     }
 
     single<LoginService> {
         get<Retrofit>().create(LoginService::class.java)
+    }
+
+    single<HomeService> {
+        get<Retrofit>().create(HomeService::class.java)
     }
 }

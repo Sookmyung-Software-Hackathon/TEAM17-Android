@@ -30,7 +30,9 @@
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="39dp"
             android:background="@drawable/rectangle_border_yellow_radius_25"
-            app:layout_constraintTop_toBottomOf="@id/iv_title" />
+            android:paddingStart="20dp"
+            app:layout_constraintTop_toBottomOf="@id/iv_title"
+            tools:ignore="RtlSymmetry" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -98,11 +100,12 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rcv_tag_list"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="28dp"
             android:orientation="vertical"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cl_chipgroup"
             tools:listitem="@layout/item_boggle_list" />
 

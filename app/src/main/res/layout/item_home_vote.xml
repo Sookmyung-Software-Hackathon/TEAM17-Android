@@ -5,17 +5,20 @@
 
     <data>
 
+        <variable
+            name="data"
+            type="com.example.team17.domain.model.home.VoteBoggleInfo" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="304dp"
-        android:layout_height="165dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="18dp"
         android:background="@drawable/rectangle_fill_main_yellow_radius_25">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
@@ -37,6 +40,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="19dp"
                 android:gravity="center"
+                android:text="@{`만료 ` + data.time + `시간 `}"
                 android:textColor="@color/black"
                 android:textSize="9sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -49,6 +53,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
                 android:layout_marginEnd="19dp"
+                android:text="@{`투표율 `+ data.vote_rate + `%`}"
                 android:textColor="#FF0000"
                 android:textSize="9sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -61,6 +66,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="19dp"
                 android:layout_marginTop="3dp"
+                android:text="@{data.title}"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -77,8 +83,8 @@
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_title"
-                tools:itemCount="3" />
-
+                tools:itemCount="3"
+                tools:listitem="@layout/item_home_vote_detail" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
