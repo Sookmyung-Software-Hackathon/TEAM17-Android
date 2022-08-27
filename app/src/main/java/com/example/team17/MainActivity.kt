@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.example.team17.databinding.ActivityMainBinding
 import com.example.team17.presentation.base.BaseActivity
+import com.example.team17.presentation.view.add.AddBottomSheetFragment
 import com.example.team17.presentation.view.add.AddFragment
 import com.example.team17.presentation.view.award.AwardFragment
 import com.example.team17.presentation.view.clipboard.ClipboardFragment
@@ -31,7 +32,11 @@ class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
                     changeFragment(AwardFragment())
                 }
                 else -> {
-                    changeFragment(AddFragment())
+                    val addBottomSheetFragment = AddBottomSheetFragment()
+                    addBottomSheetFragment.show(
+                        supportFragmentManager,
+                        addBottomSheetFragment.tag
+                    )
                 }
             }
             true

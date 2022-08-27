@@ -16,6 +16,10 @@
         <entry key="app/src/main/res/drawable/ic_clipboard_yellow.xml" value="0.1375" />
         <entry key="app/src/main/res/drawable/ic_home_black.xml" value="0.1575" />
         <entry key="app/src/main/res/drawable/ic_home_yellow.xml" value="0.1375" />
+        <entry key="app/src/main/res/drawable/ic_title.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/rectangle_border_yellow_radius_25.xml" value="0.299" />
+        <entry key="app/src/main/res/drawable/rectangle_fill_main_yellow_radius_25.xml" value="0.299" />
+        <entry key="app/src/main/res/drawable/rectangle_fill_point_yellow_radius_28.xml" value="0.299" />
         <entry key="app/src/main/res/drawable/rectangle_fill_yellow_radius_50.xml" value="0.177" />
         <entry key="app/src/main/res/drawable/shape_rect_main_yellow_cursor.xml" value="0.126" />
         <entry key="app/src/main/res/font/font_lato.xml" value="0.25092592592592594" />
@@ -23,12 +27,16 @@
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_sign_up_nickname.xml" value="0.27899423307440085" />
         <entry key="app/src/main/res/layout/activity_sign_up_select_team.xml" value="0.3157894736842105" />
+        <entry key="app/src/main/res/layout/activity_vote.xml" value="0.14492753623188406" />
         <entry key="app/src/main/res/layout/fragment_add.xml" value="0.16742654508611957" />
+        <entry key="app/src/main/res/layout/fragment_add_bottom_sheet.xml" value="0.1911231884057971" />
         <entry key="app/src/main/res/layout/fragment_award.xml" value="0.30978260869565216" />
         <entry key="app/src/main/res/layout/fragment_clipboard.xml" value="0.30978260869565216" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.30978260869565216" />
         <entry key="app/src/main/res/layout/fragment_sign_up_nickname.xml" value="0.21965579710144928" />
         <entry key="app/src/main/res/layout/fragment_sign_up_select_team.xml" value="0.21965579710144928" />
+        <entry key="app/src/main/res/layout/item_home_vote.xml" value="0.327445652173913" />
+        <entry key="app/src/main/res/layout/item_my_boggle.xml" value="0.32361874787703804" />
         <entry key="app/src/main/res/menu/menu_bottom_navi.xml" value="0.34427083333333336" />
       </map>
     </option>
