@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.view.user.SignUpSelectTeamFragment">
+
+        <TextView
+            android:id="@+id/tv_team_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="35dp"
+            android:text="팀"
+            android:textAppearance="@font/lato_bold"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_team_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="을 선택해주세요"
+            android:textAppearance="@font/lato_medium"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            app:layout_constraintStart_toEndOf="@id/tv_team_title1"
+            app:layout_constraintTop_toBottomOf="@id/tv_team_title1"
+            app:layout_constraintTop_toTopOf="@id/tv_team_title1" />
+
+        <TextView
+            android:id="@+id/tv_team_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:text="들어가고 싶은 팀이 없다면\n직접 만들어주세요"
+            android:textAppearance="@font/lato_medium"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@id/tv_team_title1"
+            app:layout_constraintTop_toBottomOf="@id/tv_team_title1" />
+
+        <TextView
+            android:id="@+id/tv_team_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:text="팀 이름을 입력해주세요"
+            android:textAppearance="@font/lato_medium"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@id/tv_team_subtitle"
+            app:layout_constraintTop_toBottomOf="@id/tv_team_subtitle" />
+
+        <EditText
+            android:id="@+id/et_team"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="13dp"
+            android:hint="팀 이름 입력"
+            app:layout_constraintTop_toBottomOf="@id/tv_team_msg" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search"
+            app:layout_constraintEnd_toEndOf="@id/et_team"
+            app:layout_constraintTop_toTopOf="@id/et_team" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="팀을 만들고 싶다면?"
+            android:textColor="#FF9700"
+            app:layout_constraintStart_toStartOf="@id/et_team"
+            app:layout_constraintTop_toBottomOf="@id/et_team" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginBottom="72dp"
+            android:background="@drawable/rectangle_fill_yellow_radius_50"
+            android:text="완료"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
