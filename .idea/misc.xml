@@ -27,6 +27,7 @@
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_sign_up_nickname.xml" value="0.27899423307440085" />
         <entry key="app/src/main/res/layout/activity_sign_up_select_team.xml" value="0.3157894736842105" />
+        <entry key="app/src/main/res/layout/activity_vote.xml" value="0.14492753623188406" />
         <entry key="app/src/main/res/layout/fragment_add.xml" value="0.16742654508611957" />
         <entry key="app/src/main/res/layout/fragment_add_bottom_sheet.xml" value="0.1911231884057971" />
         <entry key="app/src/main/res/layout/fragment_award.xml" value="0.30978260869565216" />
