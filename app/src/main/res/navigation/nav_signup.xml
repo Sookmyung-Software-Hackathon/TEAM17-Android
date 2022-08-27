@@ -4,6 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_signup"
     app:startDestination="@id/signUpNicknameFragment">
+    <fragment
+        android:id="@+id/emailSignUpFragment"
+        tools:layout="@layout/fragment_email_sign_up"
+        android:name="com.example.team17.presentation.view.user.EmailSignUpFragment"
+        android:label="EmailSignUpFragment">
+    <action
+        android:id="@+id/action_emailSignUpFragment_to_signUpNicknameFragment"
+        app:destination="@id/signUpNicknameFragment" />
 
     <fragment
         android:id="@+id/signUpNicknameFragment"
@@ -14,9 +22,11 @@
             android:id="@+id/action_signUpNicknameFragment_to_signUpSelectTeamFragment"
             app:destination="@id/signUpSelectTeamFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/signUpSelectTeamFragment"
         android:name="com.example.team17.presentation.view.user.SignUpSelectTeamFragment"
         android:label="SignUpSelectTeamFragment"
         tools:layout="@layout/fragment_sign_up_select_team" />
+    </fragment>
 </navigation>

@@ -12,12 +12,14 @@ import com.example.team17.presentation.base.BaseActivity
 
 class SignUpActivity : BaseActivity<ActivitySignUpBinding>(R.layout.activity_sign_up) {
     private lateinit var navController: NavController
+    private var emailSignUpFragment: EmailSignUpFragment = EmailSignUpFragment()
     private var signUpNicknameFragment: SignUpNicknameFragment = SignUpNicknameFragment()
     private var signUpSelectTeamFragment: SignUpSelectTeamFragment = SignUpSelectTeamFragment()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        emailSignUpFragment = EmailSignUpFragment()
         signUpNicknameFragment = SignUpNicknameFragment()
         signUpSelectTeamFragment = SignUpSelectTeamFragment()
         
