@@ -29,7 +29,7 @@ val netWorkModule = module {
         Retrofit.Builder()
             .client(get())
             .addConverterFactory(GsonConverterFactory.create(GsonBuilder().setLenient().create())) //GsonBuilder().setLenient().create()
-            .baseUrl("https://asia-northeast3-sobok-76d0a.cloudfunctions.net/api/")
+            .baseUrl("54.180.86.203:8080/")
             .build()
     }
 
