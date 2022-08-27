@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.view.add.AddBoggleActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_top"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back_48"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="보글 추가하기"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="22dp"
+            app:layout_constraintTop_toBottomOf="@id/cl_top">
+
+            <TextView
+                android:id="@+id/tv_boggle_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="41dp"
+                android:text="어떤 보글인가요?"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/et_boggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/tv_boggle_msg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:text="멋진 모임이군요!"
+                android:textColor="#FF9700"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_boggle" />
+
+            <TextView
+                android:id="@+id/tv_date_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:text="날짜"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_boggle" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="128dp"
+                android:layout_height="32dp"
+                android:background="@drawable/rectangle_fill_yellow_radius_10"
+                android:gravity="center"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_date_msg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_date_msg"
+                tools:text="2022.03.31" />
+
+            <TextView
+                android:id="@+id/tv_time_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="시간"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_date_msg" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="128dp"
+                android:layout_height="32dp"
+                android:background="@drawable/rectangle_fill_yellow_radius_10"
+                android:gravity="center"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_time_msg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_time_msg"
+                tools:text="pm 12: 41" />
+
+            <TextView
+                android:id="@+id/tv_people_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="인원"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_time_msg" />
+
+            <ImageView
+                android:id="@+id/iv_people_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_minus_circle"
+                app:layout_constraintBottom_toBottomOf="@id/iv_people_plus"
+                app:layout_constraintStart_toStartOf="@id/tv_time"
+                app:layout_constraintTop_toTopOf="@id/iv_people_plus" />
+
+            <TextView
+                android:id="@+id/tv_people_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF9700"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@id/iv_people_minus"
+                app:layout_constraintEnd_toStartOf="@id/iv_people_plus"
+                app:layout_constraintStart_toEndOf="@id/iv_people_minus"
+                app:layout_constraintTop_toTopOf="@id/iv_people_minus"
+                tools:text="5" />
+
+            <ImageView
+                android:id="@+id/iv_people_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_plus_circle"
+                app:layout_constraintBottom_toBottomOf="@id/tv_people_msg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_people_msg" />
+
+            <TextView
+                android:id="@+id/tv_tag_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="내용 태그"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_people_msg" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipgroup_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_tag_msg"
+                app:singleSelection="true" />
+
+
+            <ImageView
+                android:id="@+id/iv_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/selector_add_check"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/chipgroup_tag" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="익명 여부"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@id/iv_check"
+                app:layout_constraintStart_toEndOf="@id/iv_check"
+                app:layout_constraintTop_toTopOf="@id/iv_check" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginBottom="72dp"
+            android:background="@drawable/rectangle_fill_yellow_radius_50"
+            android:text="추가"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
