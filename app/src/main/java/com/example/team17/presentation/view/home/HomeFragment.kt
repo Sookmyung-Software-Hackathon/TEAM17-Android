@@ -27,6 +27,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(R.layout.fragment_home) {
 //        addVoteAdapter.submitList()
 //        addMyBoggleAdapter.submitList(homeViewModel.myBoggleList.value)
 
+        addMyBoggleAdapter.submitList(homeViewModel.myBoggleList.value)
         binding.rcvMyBoggle.adapter = addMyBoggleAdapter
         binding.rcvVote.adapter = addVoteAdapter
 

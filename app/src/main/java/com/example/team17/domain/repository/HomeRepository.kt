@@ -1,4 +1,7 @@
 package com.example.team17.domain.repository
 
-class HomeRepository {
+import com.example.team17.domain.model.home.MyBoggleInfo
+
+interface HomeRepository {
+    suspend fun getMyBoggle(): List<MyBoggleInfo>
 }

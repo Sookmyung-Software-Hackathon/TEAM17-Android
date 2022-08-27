@@ -5,6 +5,5 @@ data class MyBoggleInfo(
     val date: String,
     val title: String,
     val totalPerson: Int,
-    val currentPerson: Int,
-    val image: List<String>
+    val currentPerson: Int
 )

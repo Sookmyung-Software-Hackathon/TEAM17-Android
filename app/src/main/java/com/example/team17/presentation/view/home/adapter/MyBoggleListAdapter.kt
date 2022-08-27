@@ -11,7 +11,7 @@ import com.example.team17.databinding.ItemMyBoggleBinding
 import com.example.team17.domain.model.home.MyBoggleInfo
 import com.example.team17.presentation.view.home.adapter.MyBoggleListAdapter.*
 
-class MyBoggleListAdapter : ListAdapter<String, MyBoggleListViewHolder>(
+class MyBoggleListAdapter : ListAdapter<MyBoggleInfo, MyBoggleListViewHolder>(
     diffUtil
 ) {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyBoggleListViewHolder {
@@ -35,11 +35,11 @@ class MyBoggleListAdapter : ListAdapter<String, MyBoggleListViewHolder>(
 
 
     companion object {
-        val diffUtil = object : DiffUtil.ItemCallback<String>() {
-            override fun areContentsTheSame(oldItem: String, newItem: String) =
+        val diffUtil = object : DiffUtil.ItemCallback<MyBoggleInfo>() {
+            override fun areContentsTheSame(oldItem: MyBoggleInfo, newItem: MyBoggleInfo) =
                 oldItem == newItem
 
-            override fun areItemsTheSame(oldItem: String, newItem: String) =
+            override fun areItemsTheSame(oldItem: MyBoggleInfo, newItem: MyBoggleInfo) =
                 oldItem == newItem
         }
     }

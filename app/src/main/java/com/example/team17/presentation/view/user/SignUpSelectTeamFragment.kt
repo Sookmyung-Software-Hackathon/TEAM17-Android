@@ -16,6 +16,10 @@ class SignUpSelectTeamFragment :
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.ivSearch.setOnClickListener {
+
+        }
+
         binding.btnSave.setOnClickListener {
             val intent = Intent(activity, MainActivity::class.java)
             startActivity(intent)
