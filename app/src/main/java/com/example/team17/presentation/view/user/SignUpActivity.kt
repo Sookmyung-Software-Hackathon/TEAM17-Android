@@ -25,6 +25,5 @@ class SignUpActivity : BaseActivity<ActivitySignUpBinding>(R.layout.activity_sig
         
     }
 
-
     override fun onSupportNavigateUp() = findNavController(R.id.nav_signup).navigateUp()
 }
