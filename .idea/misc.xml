@@ -3,21 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/hyeon/Documents/TEAM17-Android/app/src/main/res/drawable/ic_rank_star.xml" value="0.1695" />
-        <entry key="..\:/Users/hyeon/Documents/TEAM17-Android/app/src/main/res/drawable/progress.xml" value="0.1" />
-        <entry key="..\:/Users/hyeon/Documents/TEAM17-Android/app/src/main/res/drawable/progress_yellow.xml" value="0.1695" />
-        <entry key="..\:/Users/hyeon/Documents/TEAM17-Android/app/src/main/res/layout/activity_main.xml" value="0.245018115942029" />
-        <entry key="..\:/Users/hyeon/Documents/TEAM17-Android/app/src/main/res/layout/activity_sign_up.xml" value="0.245018115942029" />
-        <entry key="..\:/Users/hyeon/Documents/TEAM17-Android/app/src/main/res/layout/activity_splash.xml" value="0.264" />
-        <entry key="..\:/Users/hyeon/Documents/TEAM17-Android/app/src/main/res/layout/activity_vote.xml" value="0.245018115942029" />
-        <entry key="..\:/Users/hyeon/Documents/TEAM17-Android/app/src/main/res/layout/fragment_add.xml" value="0.245018115942029" />
-        <entry key="..\:/Users/hyeon/Documents/TEAM17-Android/app/src/main/res/layout/fragment_award.xml" value="0.264" />
-        <entry key="..\:/Users/hyeon/Documents/TEAM17-Android/app/src/main/res/layout/fragment_clipboard.xml" value="0.245018115942029" />
-        <entry key="..\:/Users/hyeon/Documents/TEAM17-Android/app/src/main/res/layout/fragment_email_sign_up.xml" value="0.15806159420289856" />
-        <entry key="..\:/Users/hyeon/Documents/TEAM17-Android/app/src/main/res/layout/fragment_home.xml" value="0.245018115942029" />
-        <entry key="..\:/Users/hyeon/Documents/TEAM17-Android/app/src/main/res/layout/item_home_vote.xml" value="0.1" />
-        <entry key="..\:/Users/hyeon/Documents/TEAM17-Android/app/src/main/res/layout/item_my_boggle.xml" value="0.245018115942029" />
-        <entry key="..\:/Users/hyeon/Documents/TEAM17-Android/app/src/main/res/layout/item_rank.xml" value="0.4" />
+        <entry key="app/src/main/res/drawable-v24/selector_add_check.xml" value="0.173" />
         <entry key="app/src/main/res/drawable-v24/selector_menu_add.xml" value="0.1085" />
         <entry key="app/src/main/res/drawable-v24/selector_menu_award.xml" value="0.1575" />
         <entry key="app/src/main/res/drawable-v24/selector_menu_clipboard.xml" value="0.2045" />
@@ -33,10 +19,14 @@
         <entry key="app/src/main/res/drawable/ic_clipboard_yellow.xml" value="0.1375" />
         <entry key="app/src/main/res/drawable/ic_home_black.xml" value="0.1575" />
         <entry key="app/src/main/res/drawable/ic_home_yellow.xml" value="0.1375" />
+        <entry key="app/src/main/res/drawable/ic_search.xml" value="0.231" />
+        <entry key="app/src/main/res/drawable/ic_search_gray.xml" value="0.231" />
+        <entry key="app/src/main/res/drawable/ic_select.xml" value="0.173" />
         <entry key="app/src/main/res/drawable/ic_title.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/rectangle_border_gray_radius_20dp.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/rectangle_border_point_yellow_radius_28.xml" value="0.131" />
         <entry key="app/src/main/res/drawable/rectangle_border_yellow_radius_25.xml" value="0.299" />
+        <entry key="app/src/main/res/drawable/rectangle_border_yellow_radius_28.xml" value="0.173" />
         <entry key="app/src/main/res/drawable/rectangle_fill_main_yellow_radius_25.xml" value="0.299" />
         <entry key="app/src/main/res/drawable/rectangle_fill_point_yellow_radius_15.xml" value="0.123" />
         <entry key="app/src/main/res/drawable/rectangle_fill_point_yellow_radius_28.xml" value="0.299" />
@@ -58,10 +48,11 @@
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_sign_up_nickname.xml" value="0.27899423307440085" />
         <entry key="app/src/main/res/layout/activity_sign_up_select_team.xml" value="0.3157894736842105" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.16893115942028986" />
         <entry key="app/src/main/res/layout/activity_vote.xml" value="0.14492753623188406" />
         <entry key="app/src/main/res/layout/fragment_add.xml" value="0.16742654508611957" />
         <entry key="app/src/main/res/layout/fragment_add_bottom_sheet.xml" value="0.1911231884057971" />
-        <entry key="app/src/main/res/layout/fragment_award.xml" value="0.30978260869565216" />
+        <entry key="app/src/main/res/layout/fragment_award.xml" value="0.23590545654296877" />
         <entry key="app/src/main/res/layout/fragment_clipboard.xml" value="0.2353851318359375" />
         <entry key="app/src/main/res/layout/fragment_email_sign_up.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.30978260869565216" />
@@ -72,12 +63,12 @@
         <entry key="app/src/main/res/layout/item_home_vote.xml" value="0.327445652173913" />
         <entry key="app/src/main/res/layout/item_home_vote_detail.xml" value="0.12907608695652173" />
         <entry key="app/src/main/res/layout/item_my_boggle.xml" value="0.32361874787703804" />
+        <entry key="app/src/main/res/layout/item_rank.xml" value="0.48734741210937504" />
         <entry key="app/src/main/res/layout/item_tag_chip.xml" value="0.271875" />
         <entry key="app/src/main/res/menu/menu_bottom_navi.xml" value="0.34427083333333336" />
       </map>
     </option>
   </component>
-  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

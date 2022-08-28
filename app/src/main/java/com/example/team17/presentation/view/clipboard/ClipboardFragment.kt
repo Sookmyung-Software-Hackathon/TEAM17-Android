@@ -29,5 +29,19 @@ class ClipboardFragment : BaseFragment<FragmentClipboardBinding>(R.layout.fragme
         boggleListAdapter = BoggleListAdapter(local)
         boggleListAdapter.submitList(local)
         binding.rcvTagList.adapter = boggleListAdapter
+
+        binding.tvChip1.setOnClickListener {
+            binding.tvChip1.isSelected = !binding.tvChip1.isSelected == true
+        }
+        binding.tvChip2.setOnClickListener {
+            binding.tvChip2.isSelected = !binding.tvChip2.isSelected == true
+        }
+        binding.tvChip3.setOnClickListener {
+            binding.tvChip3.isSelected = !binding.tvChip3.isSelected == true
+        }
+        binding.tvChip4.setOnClickListener {
+            binding.tvChip4.isSelected = !binding.tvChip4.isSelected == true
+        }
+
     }
 }

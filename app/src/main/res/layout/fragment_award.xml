@@ -18,8 +18,8 @@
             android:id="@+id/iv_title_award"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/iv_title_award"
             android:layout_marginTop="30dp"
+            android:src="@drawable/iv_title_award"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,13 +27,13 @@
             android:id="@+id/cl_my_rank"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="42dp"
             android:background="@drawable/rectangle_fill_main_yellow_radius_25"
             android:paddingHorizontal="16dp"
             android:paddingVertical="35dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/iv_title_award">
+            app:layout_constraintTop_toBottomOf="@id/iv_title_award">
 
             <TextView
                 android:id="@+id/tv_current_date"
@@ -50,7 +50,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="35dp"
-                android:text="채영팀"
+                android:text="보글보글"
                 android:textSize="25sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@id/tv_current_date" />
@@ -70,7 +70,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="현재 2위"
+                android:text="현재 1위"
                 android:textSize="25sp"
                 app:layout_constraintBottom_toBottomOf="@id/tv_team_name"
                 app:layout_constraintStart_toEndOf="@id/tv_eun"
@@ -89,23 +89,26 @@
             <ProgressBar
                 android:id="@+id/pb_my_temperature"
                 style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="280dp"
+                android:layout_width="0dp"
                 android:layout_height="12dp"
                 android:layout_marginTop="16dp"
+                android:progress="98"
                 android:progressDrawable="@drawable/progress_skyblue"
+                app:layout_constraintEnd_toStartOf="@+id/textView"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_current_rank" />
 
             <TextView
+                android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="36.5C"
+                android:layout_marginEnd="6dp"
+                android:text="98C"
                 android:textColor="@color/award_skyblue"
                 android:textSize="11sp"
-                android:layout_marginStart="8dp"
-                app:layout_constraintStart_toEndOf="@id/pb_my_temperature"
-                app:layout_constraintTop_toTopOf="@id/pb_my_temperature"
-                app:layout_constraintBottom_toBottomOf="@id/pb_my_temperature"/>
+                app:layout_constraintBottom_toBottomOf="@id/pb_my_temperature"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/pb_my_temperature" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
@@ -113,18 +116,22 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginTop="26dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/cl_my_rank"
             android:background="@color/search_yellow"
-            android:orientation="horizontal" />
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cl_my_rank" />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_ranking"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_marginTop="26dp"
-            app:layout_constraintStart_toStartOf="parent"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/ll_line"
             tools:itemCount="6"
             tools:listitem="@layout/item_rank" />

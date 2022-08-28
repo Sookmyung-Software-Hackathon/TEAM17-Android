@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import androidx.core.content.ContentProviderCompat.requireContext
+import androidx.core.widget.addTextChangedListener
 import com.example.team17.R
 import com.example.team17.databinding.ActivityAddBoggleBinding
 import com.example.team17.presentation.base.BaseActivity
@@ -29,6 +30,23 @@ class AddBoggleActivity : BaseActivity<ActivityAddBoggleBinding>(R.layout.activi
             //TODO: POST 서버 연결
             finish()
         }
+
+        binding.tvChip1.setOnClickListener {
+            binding.tvChip1.isSelected = !binding.tvChip1.isSelected == true
+        }
+        binding.tvChip2.setOnClickListener {
+            binding.tvChip2.isSelected = !binding.tvChip2.isSelected == true
+        }
+        binding.tvChip3.setOnClickListener {
+            binding.tvChip3.isSelected = !binding.tvChip3.isSelected == true
+        }
+        binding.tvChip4.setOnClickListener {
+            binding.tvChip4.isSelected = !binding.tvChip4.isSelected == true
+        }
+        binding.ivCheck.setOnClickListener {
+            binding.ivCheck.isSelected = !binding.ivCheck.isSelected == true
+        }
+
     }
 
     private fun showDatePicker() {
